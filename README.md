@@ -20,18 +20,18 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
    - Tick on checkbox: “Copy items into destination group's folder (if needed)”.
    - Embedded Binaries with SDK
 
-![alt tag](./images/addEmbed.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/addEmbed.png)
 
 #### 1.2. Add url schemes
 
    - Add the following url schemes for Facebook(“fb” + facebook app id) and Google sign in (Reverse client id) from YKitConfig.plist file
     
-![alt tag](./images/addUrlScheme.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/addUrlScheme.png)
     
    - Go to ios info.plist
    - Add  facebook app id, facebook display name and application queries scheme as below. Please replace app id and display name with the value in the YKitConfig.plist file 
    
-![alt tag](./images/addFacebookID.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/addFacebookID.png)
 
    - Add file YKitConfig.plist to your root project
 
@@ -40,7 +40,7 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
    - Go to ios info.plist
    - Add setting like image below (There is code of the setting below. It can be copied and pasted quickly into info.plist)
    
-![alt tag](./images/settingDomain.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/settingDomain.png)
 
 
 ```
@@ -220,10 +220,10 @@ Then you create an PaymentExtraDataImp object and set it to YKit
 ### 3. Flow
 
 #### 3.1. Login flow: 
-![alt tag](./images/loginFlow.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/loginFlow.png)
 
 #### 3.2. Payment flow:
-![alt tag](./images/PaymentFlow.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/PaymentFlow.png)
 
 ### 4. Build note
 Please input full information in Xcode before build the product
@@ -232,4 +232,4 @@ Please input full information in Xcode before build the product
 - Version: string, for example: 1.0.0
 - Build: number, for example: 100
 
-![alt tag](./images/identity.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/identity.png)
