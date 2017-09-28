@@ -66,7 +66,7 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
 </plist>
 ```
 
-#### 1.4. 
+#### 1.4. Setup Code
 
 - Import SDK : #import <YKit/YK.h> in Cocos AppController.m
 
