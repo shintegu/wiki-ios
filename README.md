@@ -26,7 +26,7 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
 
    - Add the following url schemes for Facebook(“fb” + facebook app id) and Google sign in (Reverse client id) from YKitConfig.plist file
     
-![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/addUrlScheme.png)
+![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/AddUrlScheme.png)
     
    - Go to ios info.plist
    - Add  facebook app id, facebook display name and application queries scheme as below. Please replace app id and display name with the value in the YKitConfig.plist file 
