@@ -228,7 +228,7 @@ Then you create an PaymentExtraDataImp object and set it to YKit
 ### 4. Build note
 Please input full information in Xcode before build the product
 - Display Name: name appear on the device
-- Bundle identifier: bundle id of your game which provided by XCT
+- Bundle identifier: bundle id of your game which provided by YGame
 - Version: string, for example: 1.0.0
 - Build: number, for example: 100
 
