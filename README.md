@@ -35,38 +35,7 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
 
    - Add file YKitConfig.plist to your root project
 
-### 1.3. Config exception domain
-
-   - Go to ios info.plist
-   - Add setting like image below (There is code of the setting below. It can be copied and pasted quickly into info.plist)
-   
-![alt tag](https://github.com/shintegu/wiki-ios/blob/master/Images/settingDomain.png)
-
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>NSExceptionDomains</key>
-	<dict>
-		<key>api.ygame.vn</key>
-		<dict>
-			<key>NSIncludesSubdomains</key>
-			<true/>
-			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-			<true/>
-			<key>NSTemporaryExceptionMinimumTLSVersion</key>
-			<string>TLSv1.1</string>
-		</dict>
-	</dict>
-	<key>NSAllowsArbitraryLoads</key>
-	<true/>
-</dict>
-</plist>
-```
-
-#### 1.4. Setup Code
+#### 1.3. Setup Code
 
 - Import SDK : #import <YKit/YK.h> in Cocos AppController.m
 
@@ -170,7 +139,7 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
             } 
 ```
 
-#### 1.5. Public functions
+#### 1.4. Public functions
 - Here is the list of public functions you can call to customize the YKit in your game: 
 
 * setLauncherStickySide: You can specific the side that launcher can stick to via the or bitwise. 
