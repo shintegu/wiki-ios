@@ -80,13 +80,30 @@ YKit SDK for iOS is the most simple way to intergrate user and payment to YGame 
         
     //    NSLog(@"sample %@" ,[launcher getFacebookInfo]);
     [launcher setDomainDebug:YES];
+   
     if ([launcher silentLogin]) {
             
     }
-        
-    [launcher handleShowSDKCompletion:^{
-        NSLog(@"kign");
+    // Example usage of silentLogin. For more information, check the public functions section.
+    //if([launcher silentLogin]){
+    //    // Move direct to game
+    //}
+    //else {
+    //    // Show login screen
+    //    [launcher showLoginScreen];
+    //}
+    
+    
+    // Example usage of setting up payment and then buy it. For more information, check section 2. Implementation payment info
+    //[launcher setPaymentInfo:@"Server ID" andCharId:@"Character ID" andPayment:@"Payment package ID"];
+    //[launcher buyItemWithGameOrder];
+
+    
+    [launcher handleShowSDKCompletion:^{
+        NSLog(@"I'm in xD");
     }];
+    
+    
     NSString* appID = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"];
     [launcher handleCloseSDKCompletion:^{
         NSLog(@"queee");
