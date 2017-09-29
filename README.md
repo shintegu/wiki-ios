@@ -162,9 +162,9 @@ else {
 * showPaymentScreen: You may want to show payment screen from your game
 * handleShowSDKCompletion: You can get the event show SDK here
 * handleCloseSDKCompletion: You can get the event show SDK here
-### 2. Implement payment extra data
+### 2. Implement Payment Info
 
-Payment extra data (PED) is the data you send to game server when user make payment success. 
+Payment Info is the data you send to game server when user make payment. 
 For example: if your game have multiple servers or multiple characters, you may want to send this data to game server, so its will know which character get the gold. The format is defined on your demand. 
     
 Note*: 
@@ -172,18 +172,17 @@ Note*:
 * Maximum is 50 characters
 * There's no special character in string
 
-    
-To implement PED, you create a class that implement PaymentExtraDataProtocol with function
+To use it, we call from ykit.
 ```
-- (NSString *)getPaymentExtraData { 
-
-	return @“server12-id1001”; // ex: server 12, userid = 1001
-}
+setPaymentInfo:(NSString*)serverId andCharId:(NSString*)charId andPayment:(NSString*)payment;
 ```
-Then you create an PaymentExtraDataImp object and set it to YKit
+Example usage
 
 ```
-[launcher setPaymentExtraDataObject:[PaymentExtraDataImp new]];
+[ykit setPaymentInfo:@"Server ID" andCharId:@"Character ID" andPayment:@"Payment package"];
+
+//This is the command to sending the payment info to game server.
+//[ykit buyItemWithGameOrder];
 ```
     
 ### 3. Flow
